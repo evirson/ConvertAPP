@@ -1,0 +1,7 @@
+C:\Projetos\ConvertAPP\ConvertAPP\ConvertAPP\obj\Debug\net6.0\ConvertAPP.csproj.AssemblyReference.cache
+C:\Projetos\ConvertAPP\ConvertAPP\ConvertAPP\obj\Debug\net6.0\ConvertAPP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\ConvertAPP\ConvertAPP\ConvertAPP\obj\Debug\net6.0\ConvertAPP.AssemblyInfoInputs.cache
+C:\Projetos\ConvertAPP\ConvertAPP\ConvertAPP\obj\Debug\net6.0\ConvertAPP.AssemblyInfo.cs
+C:\Projetos\ConvertAPP\ConvertAPP\ConvertAPP\obj\Debug\net6.0\ConvertAPP.csproj.CoreCompileInputs.cache
+C:\Projetos\ConvertAPP\ConvertAPP\ConvertAPP\obj\Debug\net6.0\ConvertAPP.MvcApplicationPartsAssemblyInfo.cs
+C:\Projetos\ConvertAPP\ConvertAPP\ConvertAPP\obj\Debug\net6.0\ConvertAPP.MvcApplicationPartsAssemblyInfo.cache
