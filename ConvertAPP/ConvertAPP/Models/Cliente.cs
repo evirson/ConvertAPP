@@ -2,6 +2,11 @@
 {
     public class Cliente
     {
+        public Cliente() 
+        {
+
+        }
+
         public int codCli { get; set; }
         public int codLoj { get; set; }
         public string nomCli { get; set; }

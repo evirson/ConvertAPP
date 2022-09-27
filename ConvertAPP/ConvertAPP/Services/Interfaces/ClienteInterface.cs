@@ -4,10 +4,10 @@ namespace ConvertAPP.Services.Interfaces
 {
     public interface ClienteInterface
     {
-        List<Cliente> findAll();
-        Cliente findById(int codCli);
-        Cliente findByName(string nomCli);
-        Cliente findByEmail(string eMail);
+        List<ClienteService> findAll();
+        ClienteService findById(int codCli);
+        ClienteService findByName(string nomCli);
+        ClienteService findByEmail(string eMail);
 
 
     }

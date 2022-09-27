@@ -2,24 +2,24 @@
 
 namespace ConvertAPP.Services
 {
-    public class Cliente : ClienteInterface
+    public class ClienteService : ClienteInterface
     {
-        List<Cliente> ClienteInterface.findAll()
+        List<ClienteService> ClienteInterface.findAll()
         {
             throw new NotImplementedException();
         }
 
-        Cliente ClienteInterface.findByEmail(string eMail)
+        ClienteService ClienteInterface.findByEmail(string eMail)
         {
             throw new NotImplementedException();
         }
 
-        Cliente ClienteInterface.findById(int codCli)
+        ClienteService ClienteInterface.findById(int codCli)
         {
             throw new NotImplementedException();
         }
 
-        Cliente ClienteInterface.findByName(string nomCli)
+        ClienteService ClienteInterface.findByName(string nomCli)
         {
             throw new NotImplementedException();
         }

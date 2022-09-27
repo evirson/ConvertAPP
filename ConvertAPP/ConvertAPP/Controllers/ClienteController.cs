@@ -1,3 +1,4 @@
+using ConvertAPP.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ConvertAPP.Controllers
@@ -6,24 +7,22 @@ namespace ConvertAPP.Controllers
     [Route("[controller]")]
     public class ClienteController : ControllerBase
     {
-        
-        private readonly ILogger<WeatherForecastController> _logger;
+        private ClienteInterface _clienteInterface;
+        private readonly ILogger<ClienteController> _logger;
 
-        public ClienteController(ILogger<WeatherForecastController> logger)
+        public ClienteController(ILogger<ClienteController> logger, ClienteInterface clienteInterface)
         {
             _logger = logger;
+            _clienteInterface = clienteInterface;
         }
+        
 
-        [HttpGet
-        public IEnumerable<WeatherForecast> Get()
+        [HttpGet]
+        public IActionResult FindAll()
         {
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-            })
-            .ToArray();
+            
+            return Ok(_clienteInterface.findAll());
+
         }
     }
 }
