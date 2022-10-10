@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos\\ConvertAPP\\ConvertAPP\\ConvertAPP\\ConvertAPP.csproj": {}
+    "C:\\Projetos\\CSharp\\ConvertAPP\\ConvertAPP\\ConvertAPP\\ConvertAPP.csproj": {}
   },
   "projects": {
-    "C:\\Projetos\\ConvertAPP\\ConvertAPP\\ConvertAPP\\ConvertAPP.csproj": {
+    "C:\\Projetos\\CSharp\\ConvertAPP\\ConvertAPP\\ConvertAPP\\ConvertAPP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\ConvertAPP\\ConvertAPP\\ConvertAPP\\ConvertAPP.csproj",
+        "projectUniqueName": "C:\\Projetos\\CSharp\\ConvertAPP\\ConvertAPP\\ConvertAPP\\ConvertAPP.csproj",
         "projectName": "ConvertAPP",
-        "projectPath": "C:\\Projetos\\ConvertAPP\\ConvertAPP\\ConvertAPP\\ConvertAPP.csproj",
-        "packagesPath": "C:\\Users\\Evirson\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\ConvertAPP\\ConvertAPP\\ConvertAPP\\obj\\",
+        "projectPath": "C:\\Projetos\\CSharp\\ConvertAPP\\ConvertAPP\\ConvertAPP\\ConvertAPP.csproj",
+        "packagesPath": "C:\\Users\\evirs\\.nuget\\packages\\",
+        "outputPath": "C:\\Projetos\\CSharp\\ConvertAPP\\ConvertAPP\\ConvertAPP\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Evirson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\evirs\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -45,6 +45,18 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            },
+            "EntityFramework.Firebird": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "FirebirdSql.Data.FirebirdClient": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
             "FirebirdSql.EntityFrameworkCore.Firebird": {
               "target": "Package",
               "version": "[9.0.2, )"
@@ -73,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

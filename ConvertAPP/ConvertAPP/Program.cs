@@ -1,3 +1,9 @@
+using ConvertAPP.Models.Context;
+using ConvertAPP.Services;
+using ConvertAPP.Services.Interfaces;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -8,6 +14,15 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddControllers();
+
+var connection = builder.Configuration["FbConnection:FbConnectionString"];
+
+//builder.Services.AddDbContext<FbContext>(options => options.UseFirebird(connection));
+
+builder.Services.AddDbContext<FbContext>(options => options.UseFirebird(@"User=SYSDBA; Password=masterkey; DataSource=localhost; Database=c:\\fix\\TESTE.FDB; Dialect=3; Charset=NONE; Pooling=true;"));
+
+builder.Services.AddScoped<ClienteInterface, ClienteService>();
+builder.Services.AddScoped<TipoClienteInterface, TipoClienteService>();
 
 
 var app = builder.Build();

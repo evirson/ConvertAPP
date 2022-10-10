@@ -1,27 +1,21 @@
-﻿using ConvertAPP.Services.Interfaces;
+﻿using ConvertAPP.Models;
+using ConvertAPP.Models.Context;
+using ConvertAPP.Services.Interfaces;
 
 namespace ConvertAPP.Services
 {
     public class ClienteService : ClienteInterface
     {
-        List<ClienteService> ClienteInterface.findAll()
+        private FbContext _context;
+
+        public ClienteService(FbContext context)
         {
-            throw new NotImplementedException();
+            _context = context;
         }
 
-        ClienteService ClienteInterface.findByEmail(string eMail)
+        public List<Cliente> findAll()
         {
-            throw new NotImplementedException();
-        }
-
-        ClienteService ClienteInterface.findById(int codCli)
-        {
-            throw new NotImplementedException();
-        }
-
-        ClienteService ClienteInterface.findByName(string nomCli)
-        {
-            throw new NotImplementedException();
+            return _context.Clientes.ToList();
         }
     }
 }

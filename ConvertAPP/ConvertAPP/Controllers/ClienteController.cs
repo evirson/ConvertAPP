@@ -15,12 +15,12 @@ namespace ConvertAPP.Controllers
             _logger = logger;
             _clienteInterface = clienteInterface;
         }
-        
+
 
         [HttpGet]
         public IActionResult FindAll()
         {
-            
+
             return Ok(_clienteInterface.findAll());
 
         }
