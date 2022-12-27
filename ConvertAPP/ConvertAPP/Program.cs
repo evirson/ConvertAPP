@@ -9,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -17,9 +18,7 @@ builder.Services.AddControllers();
 
 var connection = builder.Configuration["FbConnection:FbConnectionString"];
 
-//builder.Services.AddDbContext<FbContext>(options => options.UseFirebird(connection));
-
-builder.Services.AddDbContext<FbContext>(options => options.UseFirebird(@"User=SYSDBA; Password=masterkey; DataSource=localhost; Database=c:\\fix\\TESTE.FDB; Dialect=3; Charset=NONE; Pooling=true;"));
+builder.Services.AddDbContext<FbContext>(options => options.UseFirebird(connection));
 
 builder.Services.AddScoped<ClienteInterface, ClienteService>();
 builder.Services.AddScoped<TipoClienteInterface, TipoClienteService>();
